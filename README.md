@@ -1,4 +1,4 @@
-# preact-ssr-router-bug
+# preact-react-router-ssr-esm
 
 This is an example of using Preact SSR with React Router and Suspense.
 
