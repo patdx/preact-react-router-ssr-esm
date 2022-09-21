@@ -13,7 +13,7 @@ actual version of Preact that is in use. The `hooks.js` file connects to an inac
 CJS version of Preact.
 
 I patched the react-router and react-router-dom libraries to provide ESM versions using
-the package exports option.
+the package exports option. Then, react-router properly uses the useContext function from hooks.mjs.
 
 Test it out by running `node server.js`, you should see the result:
 
