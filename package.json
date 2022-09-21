@@ -1,0 +1,27 @@
+{
+  "name": "preact-ssr-router-bug",
+  "packageManager": "yarn@3.2.3",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --with-node-modules --write node_modules/preact",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "preact": "10.11.0",
+    "preact-render-to-string": "5.2.4",
+    "preact-ssr-prepass": "1.2.0",
+    "react": "npm:@preact/compat@17.1.1",
+    "react-dom": "npm:@preact/compat@17.1.1",
+    "react-router": "6.4.0",
+    "react-router-dom": "6.4.0"
+  },
+  "resolutions": {
+    "react": "npm:@preact/compat@17.1.1",
+    "react-dom": "npm:@preact/compat@17.1.1",
+    "react-router@6.4.0": "patch:react-router@npm%3A6.4.0#./.yarn/patches/react-router-npm-6.4.0-b95e890b57.patch",
+    "react-router-dom@6.4.0": "patch:react-router-dom@npm%3A6.4.0#./.yarn/patches/react-router-dom-npm-6.4.0-6eb09f3674.patch"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
