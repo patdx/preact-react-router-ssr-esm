@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index 9e5daceb8ccb3b31891de4000b0c9d3620dde41a..cd0ec9fa3af104662a4500ac7ad4b8489bfaabf4 100644
+--- a/package.json
++++ b/package.json
+@@ -44,5 +44,10 @@
+   ],
+   "engines": {
+     "node": ">=14"
++  },
++  "type": "module",
++  "exports": {
++    ".": "./dist/index.js",
++    "./server": "./dist/server.mjs"
+   }
+ }
